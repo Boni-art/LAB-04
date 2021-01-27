@@ -42,14 +42,14 @@ function balance(account) {
 }
 
 function transfer(account, accountBeingTransferred, transferAmount) {
-    if (transferAmount > account1.balance) {
+    if (transferAmount > account.balance) {
         alert("You don't have sufficient ammount.");
     } else {
         accountBeingTransferred.firstName = prompt("Enter the account's first name that you want to transfer to.");
         accountBeingTransferred.lastName = prompt("Enter the account's last name that you want to transfer to.");
         accountBeingTransferred.bankNo = prompt("Enter the account's 4 digit bank no that you want to transfer to.");
         accountBeingTransferred.balance += transferAmount;
-        account.balance -= transferNo;
+        account.balance -= transferAmount;
         alert("Transferred succesfully");
     }
 }
